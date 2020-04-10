@@ -84,11 +84,11 @@ time,
 mark,
 audio,
 video {
-  margin        : 0;
-  padding       : 0;
-  border        : 0;
-  font-size     : 100%;
-  font          : inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
   vertical-align: baseline;
 }
 
@@ -125,74 +125,76 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
 table {
   border-collapse: collapse;
-  border-spacing : 0;
+  border-spacing: 0;
 }
 
-
 * {
-  -webkit-font-smoothing : antialiased;
+  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 @font-face {
-  font-family: 'Sneaky Times';
-  font-style : normal;
+  font-family: "Sneaky Times";
+  font-style: normal;
   font-weight: 400;
-  src        : local('Sneaky Times') url('./fonts/Sneaky-Times.woff2') format('woff2'),
-    url('./fonts/Sneaky-Times.woff') format('woff');
+  src: local("Sneaky Times") url("./fonts/Sneaky-Times.woff2") format("woff2"),
+    url("./fonts/Sneaky-Times.woff") format("woff");
 }
 
 body {
-  font-size     : 100px;
-  margin        : 20px;
+  font-size: 100px;
+  margin: 20px;
   letter-spacing: -0.06em;
-  font-size     : 44px;
-  line-height   : 1.2;
-  font-family   : 'Sneaky Times', "Times New Roman", serif;
+  font-size: 44px;
+  line-height: 1.2;
+  font-family: "Sneaky Times", "Times New Roman", serif;
 }
-
 
 .source {
   position: fixed;
-  right   : 10px;
-  width   : 301px;
-  bottom  : 10px;
+  right: 10px;
+  width: 301px;
+  bottom: 10px;
 }
 
 .mouse-area {
-  position: relative; 
+  position: relative;
   margin-top: 500px;
+  z-index: -1;
 }
 
 .subway-card {
   position: absolute;
-  width:  40%;
+  width: 40%;
   height: 40%;
 }
 
 .first {
-  top:  0;
+  top: 0;
   left: 0;
 }
 
 .second {
-  top:  0;
-  right:  0;
+  top: 0;
+  right: 0;
 }
 
 .third {
-  right:  0;
-  bottom:  0;
+  right: 0;
+  bottom: 0;
 }
 
 .fourth {
   bottom: 0;
   left: 0;
+}
+
+h1 {
+  z-index: 1;
 }
