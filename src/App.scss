@@ -139,6 +139,7 @@ table {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 body {
   font-size: 100px;
   margin: 20px;
@@ -160,6 +161,7 @@ body {
 .mouse-area {
   position: relative;
   margin-top: 500px;
+  z-index: -1;
 }
 
 .subway-card {
@@ -186,4 +188,8 @@ body {
 .fourth {
   bottom: 0;
   left: 0;
+}
+
+h1 {
+  z-index: 1;
 }
