@@ -139,29 +139,49 @@ table {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.no-br {
+  white-space: nowrap;
+}
 
 body {
-  font-size: 100px;
   margin: 20px;
   letter-spacing: -0.06em;
-  font-size: 44px;
+  font-size: 64px;
   line-height: 1.2;
   font-family: poynter-oldstyle-display-nar, serif;
   font-weight: 400;
   font-style: normal;
+
+  @media(max-width: 800px) {
+    font-size: 44px;
+  }
 }
 
 .source {
-  position: fixed;
-  right: 10px;
+  
+  right: 10%;
   width: 301px;
   bottom: 10px;
+
+  @media(min-width: 800px) {
+    position: fixed;
+  }
 }
 
+.mouse-area-wrapper {
+  width: 95%;
+  @media(min-width: 800px) {
+    width: 80%
+  }
+}
 .mouse-area {
   position: relative;
-  margin-top: 500px;
   z-index: -1;
+  height: 80vh;
+
+  @media(min-width: 800px) {
+    width: 80%;
+  }
 }
 
 .subway-card {
