@@ -162,13 +162,13 @@ body {
 }
 
 header {
-  right: 10px;
-  left: 10px;
+  right: 30px;
+  left: 30px;
   display: grid;
 
   align-items: flex-start;
 
-  @media (min-width: 900px) {
+  @media (min-width: 1000px) {
     grid-template-columns: 2fr 1fr;
     position: fixed;
   }
@@ -219,7 +219,7 @@ a {
   width: 301px;
   bottom: 10px;
   position: fixed;
-  @media (max-width: 900px) {
+  @media (max-width: 1000px) {
     width: 240px;
     margin-top: 65px;
     position: inherit;
@@ -227,7 +227,7 @@ a {
 }
 
 .mouse-area-wrapper {
-  @media (min-width: 900px) {
+  @media (min-width: 1000px) {
     position: fixed;
     bottom: 0;
     z-index: -1;
@@ -235,7 +235,7 @@ a {
     width: 75%;
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: 1000px) {
     display: none;
   }
 }
@@ -249,7 +249,7 @@ a {
 .subway-card {
   width: 40%;
   height: 40%;
-  @media (min-width: 900px) {
+  @media (min-width: 1000px) {
     position: absolute;
   }
 }
@@ -280,7 +280,7 @@ h1 {
 }
 
 .intro {
-  @media (max-width: 900px) {
+  @media (max-width: 1000px) {
     position: fixed;
     top: 20px;
     right: 20px;

@@ -48,12 +48,12 @@ class App extends React.Component {
             <h1>
               cards I've collected from my subway rides in <span className="no-br">New York City</span>
             </h1>
-            <MediaQuery minDeviceWidth={900}>
+            <MediaQuery minDeviceWidth={1000}>
               <button onClick={this.handleClick} className={action ? 'border' : undefined}>{action ? 'click the screen to freeze' : 'let’s dance'}</button>
             </MediaQuery>
           </header>
 
-          <MediaQuery maxDeviceWidth={900}>
+          <MediaQuery maxDeviceWidth={1000}>
             <h2 className="mobile-button">this is a lot more fun on a computer</h2>
           </MediaQuery>
 
@@ -74,7 +74,7 @@ class App extends React.Component {
           </div>
         </div>
 
-        <MediaQuery maxDeviceWidth={900}>
+        <MediaQuery maxDeviceWidth={1000}>
         <div className="mobile-card-wrapper">
           <img src="images/bowie_front.png" alt="Limited edition David Bowie MTA card" className="mobile-subway-card" />
           <img src="images/bowie_back.png" alt="Limited edition David Bowie MTA card" className="mobile-subway-card invert" />
@@ -88,7 +88,6 @@ class App extends React.Component {
           <img src="images/airport_back.png" alt="Back of MTA card" className="mobile-subway-card invert" />
           <img src="images/metrocard_back.png" alt="Front of MTA card" className="mobile-subway-card" />
           <img src="images/port_back.png" alt="Back of MTA card" className="mobile-subway-card invert" />
-      
         </div>
         </MediaQuery>
 
