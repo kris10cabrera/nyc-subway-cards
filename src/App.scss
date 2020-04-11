@@ -149,39 +149,73 @@ body {
   font-size: 64px;
   line-height: 1.2;
   font-family: poynter-oldstyle-display-nar, serif;
+  cursor: url("images/normal.cur"), auto;
   font-weight: 400;
   font-style: normal;
 
-  @media(max-width: 800px) {
+  @media (max-width: 800px) {
     font-size: 44px;
   }
 }
 
+header {
+  position: fixed;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: flex-start;
+}
+
+button {
+  line-height: 80px;
+  background: unset;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  border: none;
+  font-size: 40px;
+  letter-spacing: -0.06em;
+  font-family: poynter-oldstyle-display-nar, serif;
+  text-decoration: underline;
+  cursor: url("images/link.cur"), auto;
+
+  &:hover {
+    background: black;
+    color: white;
+  }
+
+  @media(max-width: 800px) {
+    line-height: 60px;
+  }
+}
+
+a {
+  cursor: url("images/link.cur"), auto;
+}
+
 .source {
-  
-  right: 10%;
+  right: 1%;
   width: 301px;
   bottom: 10px;
 
-  @media(min-width: 800px) {
+  @media (min-width: 800px) {
     position: fixed;
   }
 }
 
 .mouse-area-wrapper {
-  width: 95%;
-  @media(min-width: 800px) {
-    width: 80%
-  }
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+  height: 75%;
+  width: 75%;
+
 }
 .mouse-area {
   position: relative;
   z-index: -1;
-  height: 80vh;
-
-  @media(min-width: 800px) {
-    width: 80%;
-  }
+  height: 100%;
+  width: 100%;
 }
 
 .subway-card {
