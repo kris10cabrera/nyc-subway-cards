@@ -191,11 +191,6 @@ button {
   color: black;
   background: white;
   border: 2px solid black;
-  &:hover,
-  &.border {
-    background: black;
-    color: white;
-  }
 }
 
 @keyframes change-box-shadow {
