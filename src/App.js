@@ -13,7 +13,6 @@ class App extends React.Component {
       containerWidth: 0,
       containerHeight: 0
     };
-
     this.myInput = React.createRef()
   }
 
@@ -28,11 +27,11 @@ class App extends React.Component {
     })
   }
 
-  handleClick = event => {
+  handleClick = () => {
     this.setState({ action: !this.state.action })
   }
 
-  handleClickDown = event => {
+  handleClickDown = () => {
     if (this.state.action) {
       this.setState({ action: !this.state.action })
     }
@@ -87,6 +86,5 @@ class App extends React.Component {
     );
   }
 }
-
 
 export default App;
