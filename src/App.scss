@@ -197,6 +197,7 @@ button {
 }
 
 .mobile-button {
+  position: inherit;
   font-size: 22px;
   line-height: 1.3;
   margin: 10px 0 20px;
@@ -217,12 +218,11 @@ a {
   right: 1%;
   width: 301px;
   bottom: 10px;
-
-  @media (min-width: 800px) {
-    position: fixed;
-  }
+  position: fixed;
   @media (max-width: 900px) {
     width: 240px;
+    margin-top: 65px;
+    position: inherit;
   }
 }
 
@@ -289,9 +289,12 @@ h1 {
 }
 
 .mobile-card-wrapper {
-  margin-top: 550px;
+  margin-top: 581px;
 }
 .mobile-subway-card {
   max-width: 100%;
-  mix-blend-mode: difference;
+
+  &.invert {
+    filter: invert(1);
+  }
 }

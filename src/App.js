@@ -66,21 +66,29 @@ class App extends React.Component {
         <div onMouseMove={action ? this.handleMouseMove : undefined} onMouseDown={this.handleClickDown} onTouchMove={action ? this.handleMouseMove : undefined} className="mouse-area-wrapper">
           <div className="mouse-area" ref={this.myInput} >
 
-            <img src="port_back.png" alt="Back of MTA card" className="second subway-card" style={{ width: containerWidth - x, height: containerHeight - y }} />
-            <img src="metrocard_front.png" alt="Front of MTA card" style={{ width: x, height: y }} className="third subway-card" />
+            <img src="images/port_back.png" alt="Back of MTA card" className="second subway-card" style={{ width: containerWidth - x, height: containerHeight - y }} />
+            <img src="images/metrocard_front.png" alt="Front of MTA card" style={{ width: x, height: y }} className="third subway-card" />
 
-            <img src="airport_back.png" alt="Back of MTA card" className="fourth subway-card" style={{ width: containerWidth - x, height: containerHeight - y }} />
-            <img src="bowie_front.png" alt="Limited edition David Bowie MTA card" style={{ width: x, height: y }} className="first subway-card" />
+            <img src="images/airport_back.png" alt="Back of MTA card" className="fourth subway-card" style={{ width: containerWidth - x, height: containerHeight - y }} />
+            <img src="images/bowie_front.png" alt="Limited edition David Bowie MTA card" style={{ width: x, height: y }} className="first subway-card" />
           </div>
         </div>
 
         <MediaQuery maxDeviceWidth={900}>
         <div className="mobile-card-wrapper">
-          <img src="bowie_front.png" alt="Limited edition David Bowie MTA card" className="mobile-subway-card" />
-          <img src="airport_back.png" alt="Back of MTA card" className="mobile-subway-card" />
-          <img src="metrocard_front.png" alt="Front of MTA card" className="mobile-subway-card" />
-
-          <img src="port_back.png" alt="Back of MTA card" className="mobile-subway-card" />
+          <img src="images/bowie_front.png" alt="Limited edition David Bowie MTA card" className="mobile-subway-card" />
+          <img src="images/bowie_back.png" alt="Limited edition David Bowie MTA card" className="mobile-subway-card invert" />
+          <img src="images/airport_back.png" alt="Back of MTA card" className="mobile-subway-card" />
+          <img src="images/metrocard_front.png" alt="Front of MTA card" className="mobile-subway-card" />
+          <img src="images/port_back.png" alt="Back of MTA card" className="mobile-subway-card" />
+          <img src="images/metrocard_back.png" alt="Front of MTA card" className="mobile-subway-card invert" />
+          <img src="images/port_front.png" alt="Front of MTA card" className="mobile-subway-card" />
+          <img src="images/bowie_front.png" alt="Limited edition David Bowie MTA card" className="mobile-subway-card invert" />
+          <img src="images/bowie_back.png" alt="Limited edition David Bowie MTA card" className="mobile-subway-card" />
+          <img src="images/airport_back.png" alt="Back of MTA card" className="mobile-subway-card invert" />
+          <img src="images/metrocard_back.png" alt="Front of MTA card" className="mobile-subway-card" />
+          <img src="images/port_back.png" alt="Back of MTA card" className="mobile-subway-card invert" />
+      
         </div>
         </MediaQuery>
 
