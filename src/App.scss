@@ -159,33 +159,45 @@ body {
 }
 
 header {
-  position: fixed;
+  right: 10px;
+  left: 10px;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  
   align-items: flex-start;
+
+  @media(min-width: 900px) {
+    grid-template-columns: 2fr 1fr;
+    position: fixed;
+  }
 }
 
 button {
   line-height: 80px;
-  background: unset;
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   outline: none;
-  border: none;
   font-size: 40px;
   letter-spacing: -0.06em;
   font-family: poynter-oldstyle-display-nar, serif;
   text-decoration: underline;
   cursor: url("images/link.cur"), auto;
 
-  &:hover {
+  color: black;
+  background: white;
+  border: 2px solid black;
+  &:hover, &.border {
     background: black;
     color: white;
+    border: none;
   }
 
   @media(max-width: 800px) {
     line-height: 60px;
+  }
+
+  @media(max-width: 900px) {
+    display: none;
   }
 }
 
@@ -201,14 +213,20 @@ a {
   @media (min-width: 800px) {
     position: fixed;
   }
+  @media(max-width: 900px) {
+    width: 240px;
+  }
 }
 
 .mouse-area-wrapper {
-  position: fixed;
-  bottom: 0;
-  z-index: -1;
-  height: 75%;
-  width: 75%;
+  @media(min-width: 900px) {
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+    height: 75%;
+    width: 75%;
+  }
+
 
 }
 .mouse-area {
@@ -219,9 +237,12 @@ a {
 }
 
 .subway-card {
-  position: absolute;
+  
   width: 40%;
   height: 40%;
+  @media(min-width: 900px) {
+    position: absolute;
+  }
 }
 
 .first {
