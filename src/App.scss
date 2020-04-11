@@ -143,13 +143,16 @@ table {
   white-space: nowrap;
 }
 
+html {
+  cursor: url("images/normal.cur"), auto;
+}
+
 body {
   margin: 20px;
   letter-spacing: -0.06em;
   font-size: 64px;
   line-height: 1.2;
   font-family: poynter-oldstyle-display-nar, serif;
-  cursor: url("images/normal.cur"), auto;
   font-weight: 400;
   font-style: normal;
 
@@ -162,10 +165,10 @@ header {
   right: 10px;
   left: 10px;
   display: grid;
-  
+
   align-items: flex-start;
 
-  @media(min-width: 900px) {
+  @media (min-width: 900px) {
     grid-template-columns: 2fr 1fr;
     position: fixed;
   }
@@ -186,19 +189,24 @@ button {
   color: black;
   background: white;
   border: 2px solid black;
-  &:hover, &.border {
+  &:hover,
+  &.border {
     background: black;
     color: white;
-    border: none;
   }
+}
 
-  @media(max-width: 800px) {
-    line-height: 60px;
-  }
-
-  @media(max-width: 900px) {
-    display: none;
-  }
+.mobile-button {
+  font-size: 22px;
+  line-height: 1.3;
+  margin: 10px 0 20px;
+  text-decoration: none;
+  color: black;
+  background: white;
+  border: 1px solid black;
+  display: inline-block;
+  padding: 5px 10px;
+  letter-spacing: -0.06em;
 }
 
 a {
@@ -213,13 +221,13 @@ a {
   @media (min-width: 800px) {
     position: fixed;
   }
-  @media(max-width: 900px) {
+  @media (max-width: 900px) {
     width: 240px;
   }
 }
 
 .mouse-area-wrapper {
-  @media(min-width: 900px) {
+  @media (min-width: 900px) {
     position: fixed;
     bottom: 0;
     z-index: -1;
@@ -227,7 +235,9 @@ a {
     width: 75%;
   }
 
-
+  @media (max-width: 900px) {
+    display: none;
+  }
 }
 .mouse-area {
   position: relative;
@@ -237,10 +247,9 @@ a {
 }
 
 .subway-card {
-  
   width: 40%;
   height: 40%;
-  @media(min-width: 900px) {
+  @media (min-width: 900px) {
     position: absolute;
   }
 }
@@ -267,4 +276,22 @@ a {
 
 h1 {
   z-index: 1;
+  line-height: 1;
+}
+
+.intro {
+  @media (max-width: 900px) {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    left: 20px;
+  }
+}
+
+.mobile-card-wrapper {
+  margin-top: 550px;
+}
+.mobile-subway-card {
+  max-width: 100%;
+  mix-blend-mode: difference;
 }
