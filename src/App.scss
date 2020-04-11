@@ -184,9 +184,10 @@ button {
   font-size: 40px;
   letter-spacing: -0.06em;
   font-family: poynter-oldstyle-display-nar, serif;
-  text-decoration: underline;
+  animation: change-box-shadow 8s ease infinite;
   cursor: url("images/link.cur"), auto;
 
+  box-shadow:#12ff12 0 0 20px 5px;
   color: black;
   background: white;
   border: 2px solid black;
@@ -196,6 +197,49 @@ button {
     color: white;
   }
 }
+
+@keyframes change-box-shadow {
+  0% {
+    box-shadow:#ff1312 0 0 20px 5px;
+  }
+  25% {
+    box-shadow:#fbff12 0 0 20px 5px;
+  }
+  50% {
+    box-shadow:#12ff12 0 0 20px 5px;
+  }
+  75% {
+    box-shadow:#1038ff 0 0 20px 5px;
+  }
+  95% {
+    box-shadow:#d010ff 0 0 20px 5px;
+  }
+  100% {
+    box-shadow:#ff1312 0 0 20px 5px;
+  }
+}
+
+@keyframes change-box-shadow-mobile {
+  0% {
+    box-shadow:#ff1312 0 0 12px 2px;
+  }
+  25% {
+    box-shadow:#fbff12 0 0 12px 2px;
+  }
+  50% {
+    box-shadow:#12ff12 0 0 12px 2px;
+  }
+  75% {
+    box-shadow:#1038ff 0 0 12px 2px;
+  }
+  95% {
+    box-shadow:#d010ff 0 0 12px 2px;
+  }
+  100% {
+    box-shadow:#ff1312 0 0 12px 2px;
+  }
+}
+
 
 .link-cursor {
   cursor: url("images/link.cur"), auto;
@@ -213,6 +257,8 @@ button {
   display: inline-block;
   padding: 5px 10px;
   letter-spacing: -0.06em;
+  box-shadow:#12ff12 0 0 20px 5px;
+  animation: change-box-shadow-mobile 8s ease infinite;
 }
 
 a {
@@ -294,7 +340,7 @@ h1 {
 }
 
 .mobile-card-wrapper {
-  margin-top: 581px;
+  margin-top: 545px;
 }
 .mobile-subway-card {
   max-width: 100%;
