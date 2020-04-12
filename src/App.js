@@ -52,7 +52,7 @@ class App extends React.Component {
             </MediaQuery>
           </header>
           <MediaQuery maxDeviceWidth={1000}>
-            <h2 className="mobile-button">this is a lot more fun on a computer</h2>
+            <h2 className="mobile-button">this is probably more fun on a computer</h2>
           </MediaQuery>
           <a href="https://kristencabrera.com/"><img className="source" src={source} alt="Made by kris10cabrera alongside a collage with an NYC trash bag, the statue of liberty, and a slice of pizza." /></a>
         </div>
