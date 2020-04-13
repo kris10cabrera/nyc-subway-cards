@@ -13,7 +13,7 @@ function App() {
           cards I've collected from my subway rides in <span className="no-br">New York City</span>
         </h1>
 
-        <h2 className="mobile-frame">{isBigScreen ? 'it’s always more fun on a computer. scroll to party' : 'this is probably more fun on a computer'}</h2>
+        <h2 className="mobile-frame">{isBigScreen ? 'it’s always more fun on a computer' : 'this is probably more fun on a computer'}</h2>
         <a href="https://kristencabrera.com/"><img className="source" src={source} alt="Made by kris10cabrera alongside a collage with an NYC trash bag, the statue of liberty, and a slice of pizza." /></a>
       </div>
       <div className="card-wrapper">
