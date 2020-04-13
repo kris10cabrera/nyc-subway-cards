@@ -239,10 +239,6 @@ a {
     margin-top: 120px;
     width: 285px;
   }
-  @media(min-width: 1320px) {
-    width: 390px;
-    margin-top: 120px;
-  }
 }
 
 .subway-card {
@@ -259,9 +255,6 @@ h1 {
   @media(min-width: 800px) {
     font-size: 80px;
     max-width: 80%;
-  }
-  @media(min-width: 1320px) {
-    font-size: 100px;
   }
 }
 
