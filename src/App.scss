@@ -239,7 +239,7 @@ a {
     margin-top: 120px;
     width: 285px;
   }
-  @media(min-width: 1500px) {
+  @media(min-width: 1320px) {
     width: 390px;
     margin-top: 120px;
   }
@@ -260,7 +260,7 @@ h1 {
     font-size: 80px;
     max-width: 80%;
   }
-  @media(min-width: 1500px) {
+  @media(min-width: 1320px) {
     font-size: 100px;
   }
 }
@@ -275,9 +275,9 @@ h1 {
 .card-wrapper {
   margin-top: 545px;
   @media(min-width: 800px) {
-    margin-top: 700px;
+    margin-top: 654px;
   }
-  @media(min-width: 1300px) {
+  @media(min-width: 1320px) {
     margin-top: 700px;
     display: grid;
     grid-template-columns: 1fr 1fr;
